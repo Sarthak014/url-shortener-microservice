@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/public/link.png"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <main>
+      <section style="margin-top: 5rem;">
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.example.com/" />
+            <input type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </section>
+      <section style="margin-top: 5rem;">
+        <h4>Short URL Creation Example:</h4>
+        <div style="display: flex; justify-content: space-evenly; align-items: center;">
+          <div>
+            <p><b>Original Url:</b></p>
+            <code>https://www.freecodecamp.org/</code>
+          </div>
+          <div>
+            <p><b>Shorten URL:</b></p>
+            <code>[project_url]/api/shorturl/3</code>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="margin-top: 5rem;">
+      <p>By <a href="https://github.com/Sarthak014">Sarthak Agarwal</a></p>
+    </footer>
+  </body>
+</html>
